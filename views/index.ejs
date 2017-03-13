@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>prueba con node</title>
+  </head>
+  <body>
+    Mi primera web con nodejs y express
+
+    <h1>Lista de Usuarios</h1>
+    <ul>
+      <li>
+        <% for (var usuario in usuarios) { %>
+          <%- include('user', {usuario: usuario }) %>
+        <% } %>
+      </li>
+    </ul>
+
+    <footer>
+      Created at <%= nombre %>
+    </footer>
+  </body>
+</html>
